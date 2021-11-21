@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Largest and Most Trusted donation website in India">
+    <meta name="keywords" content="India, donate, cause">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>DonateforCause</title>
+</head>
+
+<body>
+    <div>
+        <h1>Donation Form</h1>
+        <h2>Please fill the form if you want to donate for cause</h2>
+        <form 
+        name="Donation"
+        action="./Form_new">
+            <!-- action is used to specify how the file will be handled in backend
+            Assume the data submitted go to php and then php will handle it -->
+            <h4>Name</h4>
+            <input type="text" placeholder="Enter Your Name">
+            <br>
+            <span>
+                I confirm my citzenship of India :
+            </span>
+            <label for="Name"></label>
+            <input type="radio" value="Confirmed Yes" name="Name Confirmation" id="Name"> Yes
+            <input type="radio" value="Confirmed No" name="Name Confirmation" id="Name">No
+
+            <h4>Mobile Number</h4>
+            <input type="text" placeholder="Mob. No.">
+            <br>
+            <span>
+                I confirm that my number is registered in India:
+            </span>
+            <label for="MobileNumber"> </label>
+            <input type="radio" value="Confirmed Yes" name="Number Confirmation" id="MobileNumber"> Yes
+            <input type="radio" value="Confirmed No" name="Number Confirmation" id="MobileNumber"> No
+            <br>
+<!--______________________________________________________________________________  -->
+            <h4>Age</h4>
+            <select name="Age" id="Age of person">
+                <option value="Choose your age"> Choose age</option>
+                <option value="Below 15">Below 15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="Above 20">Above 20</option>
+            </select>
+<!-- _____________________________________________________________________ -->
+            <h4>Amount for donation</h4>
+            <input type="text" placeholder="Amount">
+            <h4>Please confirm ammount again</h4>
+            <input type="text" placeholder="Amount Confirmation">
+            <br>
+            <span>I confirm that I want to donate the above metioned amount</span>
+            <label for="Amount"></label>
+            <input type="radio" value="Confirmed Yes" name="Amount Confirmation" id="Amount"> Yes
+            <input type="radio" value="Confirmed No" name="Amount Confirmation" id="Amount"> No
+            <br>
+            <br>
+<!--___________________________________________________________________________ -->
+            <h4>Message for Us!</h4>
+            <textarea name="Message" id="message for admin" cols="30" rows="10" placeholder="Enter a message for us"></textarea>
+            <br>
+<!-- ______________________________________________________________________________ -->
+            <input type="checkbox" , name="Final Confirmation" id="Final Check">
+            <label for="Final Check"> I confirm that I have provided all the details correctly</label>
+            <input type=submit name="Submit">
+        </form>
+    </div>
+    <div>
+        <h4>Thank You!</h4>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nDDSy5KkyKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- This way we can embed an external video
+        Youtube uses iframe tag -->
+        <h4>Our Centers</h4>
+        <video src="video.mp4"controls loop width="300pxi"></video>
+        <!-- to autoplay the video just write the word autoplay like controls and loop (at same place like them) 
+        <h4>Our Centers</h4>
+        <video src="video.mp4"controls autoplay loop width="300pxi"></video>-->
+        <h4>Know more about us on Bing!</h4>
+        <iframe src="https://bing.com" frameborder="0" width="980pxi" height="500pxi"></iframe>
+    
+    </div>
+</body>
+
+</html>
